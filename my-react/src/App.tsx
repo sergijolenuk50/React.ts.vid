@@ -4,8 +4,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Card from "./components/common/card";
-import Layout from './components/common/layout';
-import Home from './components/common/card/Home'
+import Layout from './components/common/layout'
+import Home from './components/common/card/home'
+import About from './components/common/card/about'
+import Registr from './components/common/card/register'
 
 
 function App() {
@@ -23,8 +25,11 @@ function App() {
     </> */}
 <Routes>
 <Route path="/" element={<Layout />}>
-  {/* <Route index element={<Home />} />
-  <Route path="about" element={<About />} />
+  <Route path="Home"  element={<Home />} />
+  <Route path="About"  element={<About />} />
+  <Route path="Registr"  element={<Registr />} />
+
+  {/* <Route path="about" element={<About />} />
   <Route path="dashboard" element={<Dashboard />} />
 
   
